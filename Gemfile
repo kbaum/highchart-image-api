@@ -8,10 +8,16 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'rails-api'
+gem 'active_attr'
+
 
 gem 'activerecord-jdbcsqlite3-adapter'
 
 gem 'jruby-openssl'
+
+group :test do
+  gem 'rspec-rails'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

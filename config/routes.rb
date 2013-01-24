@@ -1,4 +1,6 @@
 HighchartImageApi::Application.routes.draw do
+  get "chart_images/create"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
