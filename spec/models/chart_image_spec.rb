@@ -8,6 +8,8 @@ describe ChartImage do
 
   its(:file){ should be_present }
 
+  its(:file_path){ should be_present }
+
   its(:size){ should be > 0 }
 
 end

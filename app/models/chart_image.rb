@@ -14,6 +14,10 @@ class ChartImage
     file.size
   end
 
+  def file_path
+    file.path
+  end
+
   private
 
   def infile_path
@@ -26,7 +30,7 @@ class ChartImage
   def generate_chart
     file = Tempfile.new(['hello', '.png'])
     system "phantomjs ./app/javascript/highcharts-convert.js -infile #{infile_path} -outfile #{file.path} -width #{width}"
-    file.path
+    file
   end
 
 

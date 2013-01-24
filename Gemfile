@@ -15,8 +15,10 @@ gem 'activerecord-jdbcsqlite3-adapter'
 
 gem 'jruby-openssl'
 
-group :test do
+group :test, :development do
   gem 'rspec-rails'
+  gem 'pry-rails'
+  gem 'pry-nav'
 end
 
 # To use ActiveModel has_secure_password
