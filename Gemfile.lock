@@ -26,9 +26,9 @@ GEM
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
     activerecord-jdbc-adapter (1.2.5)
-    activerecord-jdbcsqlite3-adapter (1.2.5)
+    activerecord-jdbcpostgresql-adapter (1.2.5)
       activerecord-jdbc-adapter (~> 1.2.5)
-      jdbc-sqlite3 (~> 3.7.2)
+      jdbc-postgres (>= 9.1, < 9.3)
     activeresource (3.2.11)
       activemodel (= 3.2.11)
       activesupport (= 3.2.11)
@@ -43,7 +43,7 @@ GEM
     erubis (2.7.0)
     hike (1.2.1)
     i18n (0.6.1)
-    jdbc-sqlite3 (3.7.2.1)
+    jdbc-postgres (9.2.1002.1)
     journey (1.0.4)
     jruby-openssl (0.8.2)
       bouncy-castle-java (>= 1.5.0146.1)
@@ -70,6 +70,8 @@ GEM
       pry (~> 0.9.10)
     pry-rails (0.2.2)
       pry (>= 0.9.10)
+    puma (1.6.3)
+      rack (~> 1.2)
     puma (1.6.3-java)
       rack (~> 1.2)
     rack (1.4.4)
@@ -131,7 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_attr
-  activerecord-jdbcsqlite3-adapter
+  activerecord-jdbcpostgresql-adapter
   jruby-openssl
   pry-nav
   pry-rails
