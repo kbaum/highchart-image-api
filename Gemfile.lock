@@ -57,6 +57,10 @@ GEM
     mime-types (1.19)
     multi_json (1.5.0)
     polyglot (0.3.3)
+    pry (0.9.11.4)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     pry (0.9.11.4-java)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -66,6 +70,8 @@ GEM
       pry (~> 0.9.10)
     pry-rails (0.2.2)
       pry (>= 0.9.10)
+    puma (1.6.3-java)
+      rack (~> 1.2)
     rack (1.4.4)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -129,6 +135,7 @@ DEPENDENCIES
   jruby-openssl
   pry-nav
   pry-rails
+  puma
   rails (= 3.2.11)
   rails-api
   rspec-rails
