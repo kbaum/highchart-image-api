@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/threadedlabs/rails_log_stdout.git
+  revision: 681fa1e6468e5bc4f87ceaeaefbb2dba400f9df2
+  specs:
+    rails_log_stdout (0.1.1)
+      rails (~> 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -140,4 +147,5 @@ DEPENDENCIES
   puma
   rails (= 3.2.11)
   rails-api
+  rails_log_stdout!
   rspec-rails
