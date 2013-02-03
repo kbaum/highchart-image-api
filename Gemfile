@@ -12,7 +12,10 @@ gem 'active_attr'
 gem 'puma'
 gem 'activerecord-jdbcpostgresql-adapter'
 gem 'jruby-openssl'
-gem 'rails_log_stdout', git: 'git://github.com/threadedlabs/rails_log_stdout.git'
+
+group :production do
+  gem 'rails_log_stdout', git: 'git://github.com/threadedlabs/rails_log_stdout.git'
+end
 
 group :test, :development do
   gem 'rspec-rails'
