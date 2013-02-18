@@ -1,5 +1,8 @@
 HighchartImageApi::Application.routes.draw do
+
   resources "chart_images", only: [:create]
+
+  resource :status, only: [:show], controller: :status
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
