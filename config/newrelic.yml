@@ -6,6 +6,8 @@ common: &default_settings
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
   license_key: '<%= ENV["NEW_RELIC_LICENSE_KEY"] %>'
+
+  dispatcher: 'puma'
   
   # Agent Enabled (Rails Only)
   # Use this setting to force the agent to run or not run.
