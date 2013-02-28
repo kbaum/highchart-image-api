@@ -56,7 +56,7 @@ Using [httparty](https://github.com/jnunemaker/httparty):
 HTTParty.post('http://localhost:3000/chart_images', body: {input: chart_object_js, width:550})
 ```
 
-Where chart_object_js is a [string value]('./spec/fixtures/input.json') that can be passed into the Highcharts.Chart constructor.
+Where chart_object_js is a [string value](spec/fixtures/input.json) that can be passed into the Highcharts.Chart constructor.
 
 
 
