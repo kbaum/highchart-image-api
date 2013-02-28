@@ -47,13 +47,17 @@ curl -X POST -d "input=$HIGHCHART_OBJECT&width=900" http://localhost:3000/chart_
   
 This project is made to deploy to heroku.  It is using the [heroku-buildingpack-multi](https://github.com/ddollar/heroku-buildpack-multi)
 depending including both phantomjs and ruby.  Just create a new project within heroku 
-and push to it.
+and push it like you know how.
 
 ## Calling API from ruby
 
 Using [httparty](https://github.com/jnunemaker/httparty):
 ```ruby
-HTTParty.post('http://localhost:3000/chart_images', body: {input: chart_object_js, width:550})
+require 'httparty'
+
+chart_object_js = File.read('spec/fixtures/input.json')
+response = HTTParty.post('http://localhost:3000/chart_images', body: {input: chart_object_js, width:550})
+File.open('./chart.png', 'wb'){ |file| file << response.body }
 ```
 
 Where chart_object_js is a [string value](spec/fixtures/input.json) that can be passed into the Highcharts.Chart constructor.
