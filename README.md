@@ -24,7 +24,7 @@ Install phantomjs
 ```bash
     gem install brew
     brew install phantomjs
-```bash
+```
 
 Start up the server
 ```bash
