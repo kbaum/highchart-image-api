@@ -51,13 +51,13 @@ and push to it.
 
 ## Calling API from ruby
 
-Using the HTTParty:
-
+Using [httparty](https://github.com/jnunemaker/httparty):
 ```ruby
 HTTParty.post('http://localhost:3000/chart_images', body: {input: chart_object_js, width:550})
 ```
 
-Where chart_object_js is anything that can be passed into the Highcharts.Chart constructor.
+Where chart_object_js is a [string value]('./spec/fixtures/input.json') that can be passed into the Highcharts.Chart constructor.
+
 
 
 
