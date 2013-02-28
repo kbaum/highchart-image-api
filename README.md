@@ -7,11 +7,11 @@ Requires ruby 1.9.3 and phantomjs.
 
 ## Getting Started Locally
 
-1. Clone the project
+Clone the project
 
-    git clone git://github.com/kbaum/highchart-image-api.git
-
-2. Install dependencies
+```bash
+git clone git://github.com/kbaum/highchart-image-api.git
+```
 
 Install gems
 ```bash
@@ -26,21 +26,18 @@ Install phantomjs
     brew install phantomjs
 ```bash
 
-3. Start up the server
-
+Start up the server
 ```bash
     rails server
 ```
 
-4. Generate a chart using curl
-
+Generate a chart using curl
 ```bash
     HIGHCHART_OBJECT=`cat ./spec/fixtures/input.json`
     curl -X POST -d "input=$HIGHCHART_OBJECT" http://localhost:3000/chart_images -o ./chart.png
 ```
 
 Or optionally with width:
-
 ```bash
     curl -X POST -d "input=$HIGHCHART_OBJECT&width=900" http://localhost:3000/chart_images -o ./chart.png
 ```
