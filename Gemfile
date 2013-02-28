@@ -10,7 +10,6 @@ gem 'rails', '>=3.2.11'
 gem 'rails-api'
 gem 'active_attr'
 gem 'puma'
-#gem 'activerecord-jdbcpostgresql-adapter'
 gem 'pg'
 
 group :production do
