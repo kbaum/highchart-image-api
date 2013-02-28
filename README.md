@@ -15,39 +15,39 @@ git clone git://github.com/kbaum/highchart-image-api.git
 
 Install gems
 ```bash
-    cd highchart-image-api
-    gem install bundler
-    bundle
+cd highchart-image-api
+gem install bundler
+bundle
 ```
 
 Install phantomjs
 ```bash
-    gem install brew
-    brew install phantomjs
+gem install brew
+brew install phantomjs
 ```
 
 Start up the server
 ```bash
-    rails server
+rails server
 ```
 
 Generate a chart using curl
 ```bash
-    HIGHCHART_OBJECT=`cat ./spec/fixtures/input.json`
-    curl -X POST -d "input=$HIGHCHART_OBJECT" http://localhost:3000/chart_images -o ./chart.png
+HIGHCHART_OBJECT=`cat ./spec/fixtures/input.json`
+curl -X POST -d "input=$HIGHCHART_OBJECT" http://localhost:3000/chart_images -o ./chart.png
 ```
 
 Or optionally with width:
 ```bash
-    curl -X POST -d "input=$HIGHCHART_OBJECT&width=900" http://localhost:3000/chart_images -o ./chart.png
+curl -X POST -d "input=$HIGHCHART_OBJECT&width=900" http://localhost:3000/chart_images -o ./chart.png
 ```
 
 
 ## Deploying to Heroku
   
-  This project is made to deploy to heroku.  It is using the awesome multi-buildpack
-  depending including both phantomjs and ruby.  Just create a new project within heroku 
-  and push to it.
+This project is made to deploy to heroku.  It is using the awesome multi-buildpack
+depending including both phantomjs and ruby.  Just create a new project within heroku 
+and push to it.
 
 ## Calling API from ruby
 
